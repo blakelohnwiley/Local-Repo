@@ -4,9 +4,11 @@
 # Create the README.md file
 touch README.md
 # Add a task list to the README markdown file
-echo "### Task list" >> README.md
-echo "- [ ] Task 1 " >> README.md
-echo "- [ ] Task 2 " >> README.md
-echo "- [ ] Task 3"  >> README.md
-
+# by using cat and EOF commands
+cat << EOF > README.md
+### Task list
+- [ ] Task 1 
+- [ ] Task 2 
+- [ ] Task 3
+EOF
 
